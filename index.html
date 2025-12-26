@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>知识体系库</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    :root {
+      --theme-color: #3498db;
+    }
+    .sidebar-nav > ul > li > a {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .markdown-section h1 {
+      border-bottom: 2px solid var(--theme-color);
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">加载中...</div>
+  <script>
+    window.$docsify = {
+      name: '知识体系库',
+      repo: 'https://github.com/AugustSirius/knowledge_framework',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      search: {
+        placeholder: '搜索',
+        noData: '没有找到结果',
+        paths: 'auto'
+      },
+      auto2top: true,
+      coverpage: true,
+      notFoundPage: true,
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+</body>
+</html>
